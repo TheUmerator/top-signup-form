@@ -27,6 +27,7 @@ body {
     height: 100vh;
 
     /* background: violet; */
+    background-color: #254045;
     background-image: url(/images/angele-kamp--OQbUQce54k-unsplash.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -40,7 +41,7 @@ body {
 
 
 .logo-strip {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     background: rgba(0, 0, 0, 0.4);
     /* opacity: 0.5; */
     width: var(--left-width);
@@ -48,6 +49,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+    top: 26vh;
 }
 
 .logo {
@@ -63,6 +67,7 @@ body {
 
 .artist-credit {
     margin-bottom: 0.2rem;
+    color: white;
 }
 
 .right-side {
@@ -84,12 +89,14 @@ body {
 
 .top {
     /* margin-top: 5rem; */
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     padding-left: 3rem;
     font-size: 1.2rem;
-
+    width: 32rem;
 }
-
+.accent-text {
+    color: hsl(189, 31%, 50%);
+}
 .middle h1 {
     color: #254045;
 }
@@ -103,6 +110,7 @@ body {
 .middle {
     background: white;
     /* border: 1px solid purple; */
+    box-shadow: 0.5rem 0.5rem 0.5rem hsl(189, 30%, 71%);
 }
 
 form {
@@ -142,8 +150,10 @@ label {
 }
 
 .bottom {
+    position: relative;
+    bottom: 3rem;
     padding-left: 3rem;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 button {
     padding: 0.5rem 1rem;
@@ -152,7 +162,12 @@ button {
     background-color: #254045;
     color: white;
     font-size: 1.2rem;
+    
 }
-button:hover{
-
+a {
+    text-decoration: none;
+    color: #254045;
+}
+a:hover {
+    color: hsl(189, 31%, 50%);
 }
