@@ -1,3 +1,8 @@
+:root{
+    --right-width:50vw;
+    --left-width:50vw;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -17,7 +22,7 @@ body {
 
 .left-side {
     border: 1px solid red;
-    width: 50vw;
+    width: var(--left-width);
     height: 100vh;
 
     background: violet;
@@ -32,7 +37,10 @@ body {
 
 .logo-strip {
     border: 2px solid green;
-    width: 50vw;
+    background: rgba(0, 0, 0, 0.4);
+    /* opacity: 0.5; */
+    width: var(--left-width);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,14 +53,46 @@ body {
 }
 .logo-text {
     font-size: 4rem;
+    color: white;
 }
 .artist-credit {
     margin-bottom: 0.2rem;
 }
 .right-side {
     border: 1px solid blue;
-    width: 50vw;
+    width: var(--right-width);
     height: 100vh;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
+    padding-left: 3rem;
+
+}
+
+.top {
+    /* margin-top: 5rem; */
+    border: 1px solid purple;
+
+}
+.middle {
+    border: 1px solid purple;
+}
+form {
+    border: 1px solid green;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.input-block {
+    border: 1px solid orange;
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+}
+.bottom {
+    border: 1px solid purple;
 }
