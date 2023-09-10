@@ -87,9 +87,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
-
-
 }
 
 
@@ -135,6 +132,7 @@ form {
 
 input {
     appearance: none;
+
     border: 2px solid hsl(189, 31%, 50%);
 
 
@@ -143,10 +141,12 @@ input {
     font-family: inherit
 }
 
-
-input:active {
+input:focus {
     border: 2px solid hsl(189, 30%, 21%);
+}
 
+input:invalid:focus,input:invalid{
+    border-color: red;
 }
 
 label {
@@ -157,7 +157,7 @@ label {
 
 .bottom {
     position: relative;
-    bottom: 3rem;
+    bottom: 7vh;
     padding-left: 3rem;
     /* border: 1px solid purple; */
 }
@@ -168,7 +168,6 @@ button {
     background-color: #254045;
     color: white;
     font-size: 1.2rem;
-    
 }
 a {
     text-decoration: none;
@@ -177,3 +176,4 @@ a {
 a:hover {
     color: hsl(189, 31%, 50%);
 }
+
