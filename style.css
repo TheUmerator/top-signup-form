@@ -1,6 +1,7 @@
-:root{
-    --right-width:50vw;
-    --left-width:50vw;
+:root {
+
+    --left-width: 31vw;
+    --right-width: 69vw;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: Roboto , monospace;
+    font-family: Roboto, monospace;
 }
 
 .site-container {
@@ -21,11 +22,14 @@ body {
 }
 
 .left-side {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: var(--left-width);
     height: 100vh;
 
-    background: violet;
+    /* background: violet; */
+    background-image: url(/images/angele-kamp--OQbUQce54k-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 
     display: flex;
     flex-direction: column;
@@ -40,7 +44,7 @@ body {
     background: rgba(0, 0, 0, 0.4);
     /* opacity: 0.5; */
     width: var(--left-width);
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,15 +55,21 @@ body {
     height: 5rem;
     width: auto;
 }
+
 .logo-text {
     font-size: 4rem;
     color: white;
 }
+
 .artist-credit {
     margin-bottom: 0.2rem;
 }
+
 .right-side {
-    border: 1px solid blue;
+    /* background: black;
+    color: white; */
+    /* border: 1px solid blue; */
+    background: #f8f9fa;
     width: var(--right-width);
     height: 100vh;
 
@@ -67,32 +77,82 @@ body {
     flex-direction: column;
     justify-content: space-around;
 
-    padding-left: 3rem;
+
 
 }
+
 
 .top {
     /* margin-top: 5rem; */
     border: 1px solid purple;
+    padding-left: 3rem;
+    font-size: 1.2rem;
 
 }
-.middle {
-    border: 1px solid purple;
+
+.middle h1 {
+    color: #254045;
 }
+
+.middle h1,
+.middle form {
+    padding-left: 3rem;
+
+}
+
+.middle {
+    background: white;
+    /* border: 1px solid purple; */
+}
+
 form {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     flex-flow: row wrap;
+    width: 32rem;
 
 }
+
 .input-block {
-    border: 1px solid orange;
-    width: 15rem;
+    /* border: 1px solid orange; */
+    width: 16rem;
     margin-bottom: 1rem;
 }
+
+input {
+    appearance: none;
+    border: 2px solid hsl(189, 31%, 50%);
+
+
+    border-radius: 5px;
+    padding: 0.2rem 0.4rem;
+    font-family: inherit
+}
+
+
+input:active {
+    border: 2px solid hsl(189, 30%, 21%);
+
+}
+
 label {
     display: block;
+    /* margin-bottom: 0.5rem; */
+    font-size: 0.9rem;
 }
+
 .bottom {
+    padding-left: 3rem;
     border: 1px solid purple;
+}
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+    background-color: #254045;
+    color: white;
+    font-size: 1.2rem;
+}
+button:hover{
+
 }
