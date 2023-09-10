@@ -4,6 +4,11 @@
     --right-width: 69vw;
 }
 
+@font-face{
+    font-family: logo-font;
+    src: url(fonts/norse-bold-webfont.woff);
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -61,6 +66,7 @@ body {
 }
 
 .logo-text {
+    font-family: logo-font;
     font-size: 4rem;
     color: white;
 }
@@ -156,7 +162,7 @@ label {
     /* border: 1px solid purple; */
 }
 button {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     border-radius: 5px;
 
     background-color: #254045;
